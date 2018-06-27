@@ -1,0 +1,10 @@
+<!--logs.wxml-->
+<import src="/templates/logItem.wxml" />
+<view class="container log-list">
+  <block wx:for="{{logs}}" wx:key="index" wx:for-item="log">
+    <!-- <template is="logItem" data="{{index:index,value:log,onClick:onClick}}" /> -->
+    <log-item index="{{index}}" value="{{log}}">
+      <view>slot content</view>
+    </log-item>
+  </block>
+</view>

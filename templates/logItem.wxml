@@ -1,0 +1,5 @@
+<!-- UI模板 -->
+
+<template name="logItem">
+  <text bindtap='onClick' data-index="{{index}}" class="log-item">{{index + 1}}. {{value}}</text>
+</template>

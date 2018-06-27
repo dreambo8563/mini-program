@@ -1,0 +1,4 @@
+<!--components/logItem.wxml-->
+<text bindtap='onClick' data-index="{{index}}" class="log-item">{{index + 1}}. {{value}}
+</text>
+<slot></slot>
